@@ -1,6 +1,6 @@
 FROM python:3
 ENV PYTHONUNBUFFERED=1
-WORKDIR /code
-COPY requirements.txt /code/
+WORKDIR /codeDjango
+COPY requirements.txt /codeDjango/
 RUN pip install -r requirements.txt
-COPY . /code/
+COPY . /codeDjango/
