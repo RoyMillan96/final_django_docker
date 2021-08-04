@@ -4,9 +4,9 @@ from .models import SuperHeroe, SuperPoder
 class HeroSerializer(serializers.ModelSerializer):
     class Meta:
         model = SuperHeroe
-        exclude = ("is_active", )
+        fields = ("__all__")
     
 class SuperPoderSerializer(serializers.ModelSerializer):
     class Meta:
         model = SuperPoder
-        exclude = ("is_active", )
+        fields = ("__all__")
